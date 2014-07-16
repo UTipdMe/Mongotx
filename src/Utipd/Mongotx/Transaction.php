@@ -16,8 +16,8 @@ class Transaction
     protected $dest_id;
     protected $source_update_query;
     protected $dest_update_query;
-    protected $source_constraints;
-    protected $dest_constraints;
+    // protected $source_constraints;
+    // protected $dest_constraints;
 
 
     ////////////////////////////////////////////////////////////////////////
@@ -26,8 +26,8 @@ class Transaction
         if (isset($opts['source_id'])) { $this->setSourceID($opts['source_id']); }
         if (isset($opts['dest_id'])) { $this->setDestID($opts['dest_id']); }
 
-        if (isset($opts['source_update_query'])) { $this->setSourceUpdateQuery($opts['source_update_query']); }
-        if (isset($opts['dest_update_query'])) { $this->setDestUpdateQuery($opts['dest_update_query']); }
+        // if (isset($opts['source_update_query'])) { $this->setSourceUpdateQuery($opts['source_update_query']); }
+        // if (isset($opts['dest_update_query'])) { $this->setDestUpdateQuery($opts['dest_update_query']); }
 
         if (isset($opts['source_constraints'])) { $this->setSourceConstraints($opts['source_constraints']); }
         if (isset($opts['dest_constraints'])) { $this->setDestConstraints($opts['dest_constraints']); }
@@ -81,23 +81,23 @@ class Transaction
 
 
 
-    public function setSourceConstraints(array $source_constraints) {
-        $this->source_constraints = $source_constraints;
-        return $this;
-    }
+    // public function setSourceConstraints(array $source_constraints) {
+    //     $this->source_constraints = $source_constraints;
+    //     return $this;
+    // }
 
-    public function getSourceConstraints() {
-        return $this->source_constraints;
-    }
+    // public function getSourceConstraints() {
+    //     return $this->source_constraints;
+    // }
 
-    public function setDestConstraints(array $dest_constraints) {
-        $this->dest_constraints = $dest_constraints;
-        return $this;
-    }
+    // public function setDestConstraints(array $dest_constraints) {
+    //     $this->dest_constraints = $dest_constraints;
+    //     return $this;
+    // }
 
-    public function getDestConstraints() {
-        return $this->dest_constraints;
-    }
+    // public function getDestConstraints() {
+    //     return $this->dest_constraints;
+    // }
 
 
 
