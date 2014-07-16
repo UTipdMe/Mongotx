@@ -71,8 +71,8 @@ class Transactor
             'dest_id'            => $tx->getDestID(),
             'source_update'      => json_encode($tx->getSourceUpdateQuery()),
             'dest_update'        => json_encode($tx->getDestUpdateQuery()),
-            'source_constraints' => $tx->getSourceConstraints() ? json_encode($tx->getSourceConstraints()) : null,
-            'dest_constraints'   => $tx->getDestConstraints() ? json_encode($tx->getDestConstraints()) : null,
+            // 'source_constraints' => $tx->getSourceConstraints() ? json_encode($tx->getSourceConstraints()) : null,
+            // 'dest_constraints'   => $tx->getDestConstraints() ? json_encode($tx->getDestConstraints()) : null,
 
             'state'              => 'initial',
             'stateEnteredDate'   => $this->getDate(),
